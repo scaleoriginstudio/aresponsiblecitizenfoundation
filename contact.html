@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Us — ARC Foundation</title>
+<meta name="description" content="Volunteer, intern, partner, or donate with ARC Foundation. Get in touch and become a responsible citizen.">
+<link rel="icon" type="image/png" href="img/logo/logo.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="img/logo/logo.png" onerror="this.src='https://arcfoundationwebsitenew.vercel.app/img/logo.png'" alt="ARC Foundation" class="nav-logo-img">
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="debate.html">Debate</a></li>
+      <li><a href="environment.html">Environment</a></li>
+      <li><a href="social.html">Social</a></li>
+      <li><a href="contact.html">Join Us</a></li>
+      <li class="mobile-actions">
+        <button class="btn-donate" data-donate>&#9829; Donate</button>
+        <a href="contact.html" class="nav-get-involved btn btn-outline">Get Involved</a>
+      </li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-donate" data-donate>&#9829; Donate</button>
+      <a href="contact.html" class="nav-get-involved">Get Involved</a>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero-section">
+  <div class="page-hero-inner">
+    <span class="eyebrow" style="opacity:0;animation:fadeUp 0.6s 0.1s var(--ease) forwards">Join Us</span>
+    <h1 class="page-title" style="opacity:0;animation:fadeUp 0.8s 0.25s var(--ease) forwards">Be a Responsible<br><em>Citizen.</em></h1>
+    <p class="hero-sub" style="opacity:0;animation:fadeUp 0.8s 0.4s var(--ease) forwards">There are many ways to be part of ARC — volunteer your time, partner with us as an institution, support us financially, or bring our programmes to your school. We'd love to hear from you.</p>
+  </div>
+</section>
+
+<!-- WAYS TO ENGAGE -->
+<section class="page-section">
+  <div class="page-section-inner">
+    <div class="section-head">
+      <span class="eyebrow reveal">How You Can Help</span>
+      <h2 class="section-title reveal d1">Four ways to<br><em>make an impact.</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;">
+      <div class="mini-card card reveal">
+        <span class="tag">Volunteer</span>
+        <h4>Give Your Time</h4>
+        <p>Join us on the ground — plantation drives, debate sessions, community campaigns. No experience required, just commitment.</p>
+      </div>
+      <div class="mini-card card reveal d1">
+        <span class="tag">Internship</span>
+        <h4>Learn &amp; Contribute</h4>
+        <p>Gain hands-on experience in nonprofit management, programme design, communications, or debate coaching.</p>
+      </div>
+      <div class="mini-card card reveal d2">
+        <span class="tag">Partner</span>
+        <h4>Bring ARC to Your School</h4>
+        <p>We work with schools and colleges across Gujarat and Rajasthan to deliver debate workshops, environmental drives, and more.</p>
+      </div>
+      <div class="mini-card card reveal d3">
+        <span class="tag" style="cursor:pointer;" onclick="document.getElementById('donate-overlay').classList.add('open');document.body.style.overflow='hidden'">&#9829; Donate</span>
+        <h4>Fund the Work</h4>
+        <p>Every rupee funds debate programmes, tree plantations, and livelihood initiatives. 80G tax exemption applicable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM + INFO -->
+<section class="page-section-alt">
+  <div class="page-section-inner">
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="reveal-l">
+        <span class="eyebrow">Reach Out</span>
+        <h3>Let's talk.</h3>
+        <p>Whether you have a question, want to collaborate, or are ready to get involved — fill in the form and we'll get back to you within 2–3 working days.</p>
+
+        <div class="contact-detail">
+          <span class="contact-detail-icon">Email</span>
+          <span class="contact-detail-val">info@arcfoundation.in</span>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">Location</span>
+          <span class="contact-detail-val">Ahmedabad, Gujarat, India</span>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">Social</span>
+          <span class="contact-detail-val">
+            <a href="https://www.linkedin.com/company/arc-foundation-india/" target="_blank" rel="noopener" style="color:var(--red)">LinkedIn</a> &nbsp;&middot;&nbsp;
+            <a href="https://www.instagram.com/arcfoundationamd/" target="_blank" rel="noopener" style="color:var(--red)">Instagram</a> &nbsp;&middot;&nbsp;
+            <a href="https://www.youtube.com/@aresponsiblecitizenfoundat6682" target="_blank" rel="noopener" style="color:var(--red)">YouTube</a> &nbsp;&middot;&nbsp;
+            <a href="https://www.facebook.com/aresponsiblecitizenfoundation" target="_blank" rel="noopener" style="color:var(--red)">Facebook</a>
+          </span>
+        </div>
+
+        <div class="tax-note-box">
+          <p><strong>80G Tax Exemption</strong> — All donations to ARC Foundation are eligible for 80G tax deduction under the Income Tax Act. We will provide a receipt for your records.</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal-r">
+        <form id="contact-form" onsubmit="handleContactSubmit(event)">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Priya" required>
+            </div>
+            <div class="form-field">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Sharma" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="priya@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+          </div>
+          <div class="form-field">
+            <label for="interest">I'm interested in *</label>
+            <select id="interest" name="interest" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="volunteer">Volunteering</option>
+              <option value="intern">Internship</option>
+              <option value="partner-school">Partnering — School / College</option>
+              <option value="partner-corporate">Partnering — Corporate / CSR</option>
+              <option value="donate">Donating</option>
+              <option value="debate">Debate Programmes</option>
+              <option value="environment">Environmental Programmes</option>
+              <option value="other">Other / General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="org">School / Organisation (if applicable)</label>
+            <input type="text" id="org" name="org" placeholder="Delhi Public School, Ahmedabad">
+          </div>
+          <div class="form-field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us a bit about yourself and how you'd like to get involved..." required></textarea>
+          </div>
+          <p class="form-note">We typically respond within 2–3 working days.</p>
+          <button type="submit" class="btn btn-red" style="width:100%;justify-content:center;font-size:0.82rem;">Send Message</button>
+        </form>
+
+        <div id="form-success" style="display:none;margin-top:1.5rem;padding:1.5rem 2rem;background:var(--grey-100);border-radius:var(--radius);border-left:3px solid var(--red);">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;margin-bottom:0.4rem;">Message received.</h3>
+          <p style="font-size:0.88rem;color:var(--grey-600);font-weight:300;">Thank you for reaching out. We'll be in touch within 2–3 working days.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="page-section">
+  <div class="page-section-inner" style="max-width:760px;">
+    <div class="section-head">
+      <span class="eyebrow reveal">Common Questions</span>
+      <h2 class="section-title reveal d1"><em>FAQs</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <h4>Do I need prior experience to volunteer?</h4>
+        <p>Not at all. We welcome anyone who is passionate about the cause. For debate programmes, we run onboarding sessions for new volunteers and adjudicators.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Is my donation tax-deductible?</h4>
+        <p>Yes. ARC Foundation is registered under 80G of the Income Tax Act. All donations are eligible for tax deduction and we provide receipts for all contributions.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Can ARC run programmes at our school?</h4>
+        <p>Absolutely. We partner with schools and colleges across Gujarat and Rajasthan to deliver debate workshops, environmental drives, and more. Get in touch using the form above.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Are internships paid?</h4>
+        <p>Internships at ARC are currently unpaid, but offer hands-on experience and a strong reference. We're working toward offering stipends — your donations help make that possible.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Where does ARC operate?</h4>
+        <p>Our primary focus is Western India — Gujarat and Rajasthan — but our debate programmes have connected with students nationwide through online formats like ThinkOff.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE STRIP -->
+<section class="page-donate-strip">
+  <div style="max-width:var(--max);margin:0 auto;padding:0 var(--gutter);">
+    <span class="eyebrow reveal">Take Action</span>
+    <h2 class="reveal">Ready to make<br>a <em>difference?</em></h2>
+    <p class="reveal d1">Join hundreds of students, volunteers, and supporters who are already part of the ARC story.</p>
+    <div class="btn-row reveal d2">
+      <button class="btn btn-red" data-donate>&#9829; Donate Now</button>
+      <a href="about.html" class="btn btn-outline">Learn About ARC</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="img/logo/logo.png" onerror="this.src='https://arcfoundationwebsitenew.vercel.app/img/logo.png'" alt="ARC Foundation" class="footer-logo">
+      <p class="footer-tagline">Working at the intersection of youth, environment, and community to build a more responsible India.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/arc-foundation-india/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://www.facebook.com/aresponsiblecitizenfoundation" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/arcfoundationamd/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        <a href="https://www.youtube.com/@aresponsiblecitizenfoundat6682" target="_blank" rel="noopener" aria-label="YouTube">yt</a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Programs</h5><ul>
+      <li><a href="debate.html">Debate &amp; Speaking</a></li>
+      <li><a href="environment.html">Environment</a></li>
+      <li><a href="social.html">Social Upliftment</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Organisation</h5><ul>
+      <li><a href="about.html">About ARC</a></li>
+      <li><a href="contact.html">Get Involved</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Get Involved</h5><ul>
+      <li><a href="contact.html">Volunteer</a></li>
+      <li><a href="contact.html">Internships</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button data-donate style="background:none;border:none;font-family:inherit;font-size:0.85rem;color:var(--red);cursor:pointer;padding:0;font-weight:400;text-align:left;">&#9829; Donate</button></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2024 A Responsible Citizen Foundation. All rights reserved.</span>
+    <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+
+<!-- DONATE MODAL -->
+<div class="donate-overlay" id="donate-overlay">
+  <div class="donate-modal">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <span class="eyebrow">Support ARC Foundation</span>
+    <h2>Make a Difference</h2>
+    <p>Your donation funds debate programs, tree plantations, and livelihood initiatives across India.</p>
+    <div class="donate-presets">
+      <button class="donate-preset" data-amount="500">&#8377;500</button>
+      <button class="donate-preset active" data-amount="1000">&#8377;1,000</button>
+      <button class="donate-preset" data-amount="2500">&#8377;2,500</button>
+      <button class="donate-preset" data-amount="5000">&#8377;5,000</button>
+      <button class="donate-preset" data-amount="10000">&#8377;10,000</button>
+      <button class="donate-preset" data-amount="">Custom</button>
+    </div>
+    <div class="donate-field">
+      <label>Amount (INR)</label>
+      <input type="number" id="donate-amount" value="1000" min="1">
+    </div>
+    <button class="btn btn-red donate-pay-btn" id="donate-pay-btn">Proceed to Pay</button>
+    <p class="donate-note">Razorpay secure checkout &middot; 80G tax exemption applicable</p>
+  </div>
+</div>
+
+<script src="js/shared.js"></script>
+<script src="js/index.js"></script>
+<script>
+function handleContactSubmit(e) {
+  e.preventDefault();
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+</script>
+</body>
+</html>
