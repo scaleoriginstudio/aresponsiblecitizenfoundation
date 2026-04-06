@@ -115,6 +115,12 @@
 .prog-nav-link { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--grey-600); text-decoration: none; transition: color 0.2s; }
 .prog-nav-link:hover { color: var(--red); }
 
+/* ── Utility grids (responsive-safe replacements for inline grid styles) ── */
+.inline-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+.inline-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; }
+.shilp-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.shilp-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .feature-grid { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -124,9 +130,14 @@
   .testimonial-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .inline-grid-4 { grid-template-columns: 1fr 1fr; }
+  .inline-grid-3 { grid-template-columns: 1fr 1fr; }
+  .shilp-inner { grid-template-columns: 1fr; }
 }
 @media (max-width: 580px) {
   .mini-cards-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .stat-row { grid-template-columns: 1fr 1fr; }
+  .inline-grid-4 { grid-template-columns: 1fr; }
+  .inline-grid-3 { grid-template-columns: 1fr; }
 }
